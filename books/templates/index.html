@@ -1,0 +1,26 @@
+﻿{% extends 'theme.html'%}
+{% block content %}
+<h2 > EBOOK MANAGEMENT SYSTEM </h2>
+
+<div class="container">
+    <div class="row">
+
+        {% for book in books %}
+        <div class="col-md-3">
+            <div class="card" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{book.BooksName}}</h5>
+                    <p class="card-text"> {{book.EbooksAuthor}}</p>
+                    <a href="#" class="btn btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+        
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
